@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "charcode",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Get the charcode of a character.",
+	"repository": "https://github.com/Richienb/charcode.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,8 +17,24 @@
 		"lint": "xo",
 		"test": "yarn lint && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"charcode",
+		"char",
+		"code",
+		"string",
+		"get",
+		"keyboard",
+		"type",
+		"typing",
+		"user",
+		"convert",
+		"keycode",
+		"key"
+	],
+	"dependencies": {
+		"char-regex": "^1.0.1",
+		"ow": "^0.16.0"
+	},
 	"devDependencies": {
 		"ava": "^3.3.0",
 		"eslint-config-richienb": "^0.3.0",

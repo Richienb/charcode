@@ -1,41 +1,41 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# Charcode [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb//master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/charcode)
 
-My awesome module.
+Get the charcode of a character.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/charcode.png)](https://npmjs.com/package/charcode)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install charcode
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const charcode = require("charcode");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+charcode("a");
+//=> 97
+
+charcode.from(97);
+//=> "a"
 ```
 
 ## API
 
-### theModule(input, options?)
+### charcode(input)
 
 #### input
 
 Type: `string`
 
-Lorem ipsum.
+The character to get the charcode of.
 
-#### options
+### charcode.from(input)
 
-Type: `object`
+#### input
 
-##### postfix
+Type: `number`
 
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The charcode to get the character of.

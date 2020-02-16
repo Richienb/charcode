@@ -1,14 +1,29 @@
-/**
- * My awesome module.
- * @param input Lorem ipsum.
- * @param postfix Lorem ipsum.
- * @example
- * ```
- * const theModule = require("the-module");
- * theModule("unicorns");
- * //=> 'unicorns & rainbows'
- * ```
-*/
-declare function theModule(input: string, { postfix }: { postfix?: string }): string;
+declare const charcode: {
+	/**
+	 * Get the charcode of a character.
+	 * @param input The character to get the charcode of.
+	 * @example
+	 * ```
+     * const charcode = require("charcode");
+     *
+     * charcode("a");
+     * //=> 97
+	 * ```
+	*/
+	(input: string): number
 
-export = theModule;
+	/**
+	 * Get the character of a charcode.
+	 * @param input The charcode to get the character of.
+	 * @example
+	 * ```
+	 * const charcode = require("charcode");
+	 *
+	 * charcode.from(97);
+	 * //=> "a"
+	 * ```
+	*/
+	from(input: number): string
+}
+
+export = charcode

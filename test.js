@@ -1,13 +1,7 @@
 const test = require("ava")
-const theModule = require(".")
+const charcode = require(".")
 
 test("main", (t) => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number",
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+	t.is(charcode("a"), 97)
+	t.is(charcode.from(97), "a")
 })

@@ -1,7 +1,16 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const charRegex = require("char-regex")
+const { default: ow } = require("ow")
 
-	return `${input} & ${postfix}`
+module.exports = (input) => {
+	ow(input, ow.string.is((val) => val.match(charRegex()).length === 1))
+
+	return input.charCodeAt(0)
+}
+
+module.exports.from = (input) => {
+	ow(input, ow.number.greaterThanOrEqual(0).lessThanOrEqual(65535))
+
+	return String.fromCharCode(input)
 }
