@@ -1,6 +1,6 @@
 {
 	"name": "charcode",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Get the charcode of a character.",
 	"repository": "https://github.com/Richienb/charcode.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
